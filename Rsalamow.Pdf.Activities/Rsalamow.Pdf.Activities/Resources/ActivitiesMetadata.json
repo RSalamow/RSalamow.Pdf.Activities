@@ -1,0 +1,13 @@
+{
+  "resourceManagerName": "Rsalamow.Pdf.Activities.Resources.Resources",
+  "activities": [
+    {
+      "fullName": "Rsalamow.Pdf.Activities.ActivityTemplate",
+      "shortName": "Template",
+      "displayNameKey": "ActivityTemplate_DisplayName",
+      "descriptionKey": "ActivityTemplate_Description",
+      "categoryKey": "Templates",
+      "viewModelType": "Rsalamow.Pdf.Activities.ViewModels.ActivityTemplateViewModel"
+    }
+  ]
+}
