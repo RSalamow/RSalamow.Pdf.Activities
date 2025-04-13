@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Rsalamow.Pdf.Activities\Rsalamow.Pdf.Activities.csproj" />
+    <ProjectReference Include="..\Rsalamow.Pdf.Activities\RSalamow.Pdf.Activities.csproj" />
   </ItemGroup>
 
 </Project>

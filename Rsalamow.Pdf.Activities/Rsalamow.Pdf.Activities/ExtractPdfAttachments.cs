@@ -5,7 +5,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.Diagnostics;
 
-namespace Rsalamow.Pdf.Activities
+namespace RSalamow.Pdf
 {
     public class ExtractPdfAttachments : CodeActivity // This base class exposes an OutArgument named Result
     {

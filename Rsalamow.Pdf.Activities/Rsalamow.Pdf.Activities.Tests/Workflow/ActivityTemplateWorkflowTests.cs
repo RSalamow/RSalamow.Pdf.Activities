@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Rsalamow.Pdf.Activities.Tests.Tests.Workflow
+namespace Rsalamow.Pdf.Activities.Tests.Workflow
 {
     public class ActivityTemplateWorkflowTests
     {

@@ -15,7 +15,7 @@
 		<VersionPrefix Condition="'$(Configuration)' == 'Debug'">1.0.$(VersionBuild)-dev.$(VersionRevision)</VersionPrefix>
 		<Authors>UiPath</Authors>
 		<PackageTags>UiPathActivities</PackageTags>
-		<Product>Rsalamow.Pdf.Activities.Packaging</Product>
+		<Product>Rsalamow.Pdf.Activities</Product>
 		<PackageIconUrl>https://download.uipath.com/UI_icon.png?web</PackageIconUrl>
 		<PackageOutputPath>..\Output\Activities\Packages\</PackageOutputPath>
     <SynfustionPath>..\Rsalamow.Pdf.Activities.Tests\bin\Debug\net6.0\</SynfustionPath>
@@ -55,7 +55,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
-		<ProjectReference Include="..\Rsalamow.Pdf.Activities\Rsalamow.Pdf.Activities.csproj">
+		<ProjectReference Include="..\Rsalamow.Pdf.Activities\RSalamow.Pdf.Activities.csproj">
 			<PrivateAssets>All</PrivateAssets>
 		</ProjectReference>
 	</ItemGroup>
