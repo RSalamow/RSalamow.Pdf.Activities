@@ -47,7 +47,9 @@ namespace RSalamow.Pdf
             {
                 if (annot is PdfLoadedAttachmentAnnotation attachmentAnnotation)
                 {
-                    SaveAttachmentToFile(attachmentAnnotation.FileName, attachmentAnnotation.Data);
+                    var filePath = Path.Combine(Path.GetTempPath(), attachmentAnnotation.FileName);
+                    SaveAttachmentToFile(filePath, attachmentAnnotation.Data);
+                    files.Add(filePath);
                 }
             }
         }
@@ -57,6 +59,7 @@ namespace RSalamow.Pdf
             foreach (PdfAttachment attachment in loadedDocument.Attachments)
             {
                 var fullPath = Path.Combine(fileFolderPath, attachment.FileName);
+                fullPath = GetUniqueFilePath(fullPath);
                 SaveAttachmentToFile(fullPath, attachment.Data);
                 files.Add(fullPath);
             }
@@ -66,6 +69,23 @@ namespace RSalamow.Pdf
         {
             using var stream = new FileStream(filePath, FileMode.Create);
             stream.Write(data, 0, data.Length);
+        }
+
+        private string GetUniqueFilePath(string filePath)
+        {
+            var directory = Path.GetDirectoryName(filePath);
+            var fileName = Path.GetFileNameWithoutExtension(filePath);
+            var extension = Path.GetExtension(filePath);
+            var uniqueFilePath = filePath;
+            var counter = 1;
+
+            while (File.Exists(uniqueFilePath))
+            {
+                uniqueFilePath = Path.Combine(directory, $"{fileName}({counter}){extension}");
+                counter++;
+            }
+
+            return uniqueFilePath;
         }
 
         public void ExecuteInternal()
