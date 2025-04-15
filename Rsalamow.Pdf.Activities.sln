@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSalamow.Pdf.Activities", "Rsalamow.Pdf.Activities\Rsalamow.Pdf.Activities\RSalamow.Pdf.Activities.csproj", "{EFA75FFC-F2BE-4586-B38E-F74F66AAE6CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rsalamow.Pdf.Activities.Packaging", "Rsalamow.Pdf.Activities\Rsalamow.Pdf.Activities.Packaging\Rsalamow.Pdf.Activities.Packaging.csproj", "{D1F4843E-D702-468A-BDFF-D3B334AEE77B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rsalamow.Pdf.Activities.Tests", "Rsalamow.Pdf.Activities\Rsalamow.Pdf.Activities.Tests\Rsalamow.Pdf.Activities.Tests.csproj", "{6507323B-2015-4B5A-90FA-B38A15652341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{5818EA91-FE17-4F43-B588-BE413B05D37A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6507323B-2015-4B5A-90FA-B38A15652341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6507323B-2015-4B5A-90FA-B38A15652341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6507323B-2015-4B5A-90FA-B38A15652341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5818EA91-FE17-4F43-B588-BE413B05D37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5818EA91-FE17-4F43-B588-BE413B05D37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5818EA91-FE17-4F43-B588-BE413B05D37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5818EA91-FE17-4F43-B588-BE413B05D37A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

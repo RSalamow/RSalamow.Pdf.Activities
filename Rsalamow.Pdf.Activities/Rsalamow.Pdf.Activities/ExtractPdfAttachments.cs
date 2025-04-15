@@ -44,11 +44,24 @@ namespace RSalamow.Pdf
                 }
             }
             //Iterates through the attachments
-            if (loadedDocument.Attachments.Count != 0)
+            if (loadedDocument.Attachments != null && loadedDocument.Attachments.Count != 0)
             {
                 foreach (PdfAttachment attachment in loadedDocument.Attachments)
                 {
                     string fullPath = fileFolderPath + "\\" + attachment.FileName;
+                    if (File.Exists(fullPath))
+                    {
+                        // If the file already exists, create a new file name
+                        string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fullPath);
+                        string extension = Path.GetExtension(fullPath);
+                        int counter = 1;
+                        while (File.Exists(fullPath))
+                        {
+                            fullPath = Path.Combine(fileFolderPath, $"{fileNameWithoutExtension}_{counter}{extension}");
+                            counter++;
+                        }
+                    }
+
                     //Extracts the attachment and saves it to the disk
                     FileStream stream = new FileStream(fullPath, FileMode.Create);
                     stream.Write(attachment.Data, 0, attachment.Data.Length);
