@@ -12,15 +12,22 @@ Built using **.NET 6 (C#)**, it is compatible with modern UiPath Studio versions
 - Lightweight, fast, and easy to use in UiPath workflows.
 
 ---
+## Installation from UiPath Studio
+1. Download the `.nupkg` file
+2. In UiPath Studio:
+   - Go to **Manage Packages** → **Settings**.
+   - Add a new package source pointing to your local `.nupkg` file or NuGet feed.
+   - Install **Rsalamow.Pdf.Activities** into your workflow.
+---
 
-## Installation
+## Installation from Visual Studio
 
 1. Build the project in Visual Studio (`Release` mode).
 2. Locate the `.nupkg` file in the `bin/Release` folder.
 3. In UiPath Studio:
    - Go to **Manage Packages** → **Settings**.
    - Add a new package source pointing to your local `.nupkg` file or NuGet feed.
-   - Install **ExtractPdfAttachment** into your workflow.
+   - Install **Rsalamow.Pdf.Activities** into your workflow.
 
 ---
 
